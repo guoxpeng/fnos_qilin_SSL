@@ -43,23 +43,17 @@ qilin SSL 是一个基于 Flask 和 OpenSSL 开发的自签证书管理系统，
 - Python 3.6 或更高版本
 
 ### 安装步骤
-1. 使用exe可执行文件安装
+1. 此版本适配飞牛，在源大佬的代码基础上，添加了两个配置文件,安装了Python 3.9
 
-2. 或者克隆或下载项目到本地
+2.上传到飞牛的/vol1/docker/qilin_SSL 文件下运行
 
-3. 安装依赖包
-   ```bash
-   pip install -r requirements.txt
-   ```
+cd /vol1/docker/qilin_SSL/
 
-4. 运行应用程序
-   ```bash
-   python app.py
-   ```
+docker compose up -d --build
 
-5. 在浏览器中访问 `http://127.0.0.1:2002`
+6. 在浏览器中访问 `http:/"飞牛ip":2002`
 
-6. 使用默认账号登录
+7. 使用默认账号登录
    - 用户名：admin
    - 密码：admin123
 
