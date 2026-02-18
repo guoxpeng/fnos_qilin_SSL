@@ -1,0 +1,13 @@
+version: '3'
+services:
+  qilin-ssl:
+    container_name: qilin_ssl
+    build: .
+    ports:
+      - "2002:2002"
+    volumes:
+      - ./data/ca:/app/ca           # 证书数据
+      - ./data/certs:/app/certs     # 签发的证书
+      - ./data/uploads:/app/uploads # 上传文件
+      - ./data/proxy:/app/proxy     # 代理配置
+    restart: always
